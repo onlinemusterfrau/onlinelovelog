@@ -331,6 +331,10 @@ padding-top:25px;
     .text-container-heart p {
       font-size: 1.2em;
     }
+      .popup-box,
+  .popup-box-right {
+    display: block;  /* Make popups visible by default on smaller screens */
+  }
 
 
   }
