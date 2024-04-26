@@ -108,7 +108,9 @@ footer {
   background-color: #5D6EFF;  /* Optional: Set a background color */
   color: #000000;  /* Optional: Set text color */
   border-top: 1px solid #000000;
-  font-family: "HWT Artz";  
+    font-family: "hwt-artz", sans-serif;
+    font-weight: 700;
+    font-style: normal; 
   font-size: 25px;  /* Example: Set font size to 14px */
   letter-spacing: 0.5px;
   position: absolute;
