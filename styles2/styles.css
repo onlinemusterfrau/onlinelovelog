@@ -1,0 +1,340 @@
+/* Global Styles (Optional) */
+body {
+    background-image: url('../images/Ebene-1.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin: 0;  /* Remove default browser margins */
+    font-family: HWT Artz;  /* Choose a base font family */
+    font-size: 30px;
+    width: 100%; /* Ensure body fills viewport */
+
+}
+
+header {
+  text-align: center;  /* Center the content horizontally */
+  position: flex;  /* Needed for absolute positioning of child elements */
+  padding-top: 2%;  /* Top padding for 5% from the top */
+}
+
+.star-image2 {
+  position: flex;
+}
+
+.star-image2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);  filter: blur(12px);  z-index: -1;  
+}
+
+.star-image2 {
+  position: absolute;
+  top: 12%;  /* Positions the container vertically at 50% (center) */
+  left: 30%;  /* Positions the container horizontally at 50% (center) */
+  width: 85px;  /* Adjust width and height as needed */
+  height: 85px;  /* Adjust width and height as needed */
+  background-image: url("../images/Polygon 2.svg");
+  background-repeat: no-repeat;  /* Prevent image tiling */
+  background-size: cover;  /* Resize image to fit the container */
+}
+
+.star-image {
+  position: flex;
+}
+
+.star-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.25);  filter: blur(12px);  z-index: -1;  
+}
+
+.star-image {
+  position: absolute;
+  top: 14.6%;  /* Positions the container vertically at 50% (center) */
+  left: 67%;  /* Positions the container horizontally at 50% (center) */
+  width: 75px;  /* Adjust width and height as needed */
+  height: 75px;  /* Adjust width and height as needed */
+  background-image: url("../images/Polygon\ 1.svg");
+  background-repeat: no-repeat;  /* Prevent image tiling */
+  background-size: cover;  /* Resize image to fit the container */
+}
+
+
+/* Adjust heading styles as needed (refer to your previous styles) */
+h1 {
+    font-size: 3em;
+    color: #E4FF74;
+    -webkit-text-stroke: 1px #ffffff;
+
+}
+
+h2 {
+    font-family: "sloop-script-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4.1em;  /* Adjust font size as needed */
+    color: #E4FF74;
+    -webkit-text-stroke: 0.8px #ffffff;
+    line-height: 0.2;
+
+}
+
+h3 {
+    font-size: 3em;
+    color: #E4FF74;
+    -webkit-text-stroke: 1px #ffffff;
+
+}
+
+.grid-container {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  width: 100%;  /* Example: Set width to 80% of the viewport */
+  margin-top: 4%;  /* Add margins for horizontal centering */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #5D6EFF;  /* Optional: Set a background color */
+  color: #000000;  /* Optional: Set text color */
+  border-top: 1px solid #000000;
+  font-family: "HWT Artz";  
+  font-size: 25px;  /* Example: Set font size to 14px */
+  letter-spacing: 0.5px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;  /* Allow footer to adjust to content height */
+  display: flex;  /* Enable flexbox for content centering */
+  align-items: center;  /* Align content vertically within the footer */
+  justify-content: center;  /* Align content horizontally within the footer */
+  height: 1.5em;
+}
+
+
+.text-container {
+  background-color: #5CFFE0;  /* Set background color for the rectangle */
+  height: 50px;  /* Set a specific height (adjust as needed) */
+  width: 250px;  /* Set a specific width (adjust as needed) */
+  border: 1px solid #000000;;
+  color: #000000;  /* Example: Set text color to white */
+  border-radius: 30px;  /* Set the corner radius for rounded corners */
+  display: flex;
+  justify-content:center;
+  align-items: center;
+
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;  /* Add transition for smooth color changes */
+  &:hover {
+      background-color: #ffffff;  /* Set background color on hover */
+      color: #5CFFE0;  /* Set text color on hover */
+      -webkit-text-stroke: 0.8px #000000;
+  }
+}
+
+.text-container:hover +.popup-box {
+  display: block;
+}
+
+.text-container p {
+  /* Optional styles for the paragraph element (text) */
+  font-size: 28px;  /* Example: Set font size to 14px */
+  letter-spacing: 0.5px;
+}
+
+.popup-box {
+  background-color: #ffffff;  /* Set background color for the rectangle */
+  height: 300px;  /* Set a specific height (adjust as needed) */
+  width: 250px;  /* Set a specific width (adjust as needed) */
+  border: 1px solid #000000;;
+  color: #000000;  /* Example: Set text color to white */
+  border-radius: 60px;  /* Set the corner radius for rounded corners */
+  display: none;  /* Hide the popup box initially */
+  z-index: -1;
+  box-shadow: 5px 5px 0px #000000;;  /* Add solid black shadow */
+}
+
+.popup-box p {  /* Optional styles for the text within the popup box */
+  font-size: 12.5px;  /* Example: Set font size */
+  margin-top: 18px;
+  margin-left: 20px;  /* Remove default margins */
+  margin-right: 20px;  /* Remove default margins */
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+
+}
+
+.text-container-right {
+  background-color: #FF59E5;  /* Set background color for the rectangle */
+  height: 50px;  /* Set a specific height (adjust as needed) */
+  width: 250px;  /* Set a specific width (adjust as needed) */
+  border: 1px solid #000000;
+  color: #000000;  /* Example: Set text color to white */
+  border-radius: 30px;  /* Set the corner radius for rounded corners */
+  display: flex;
+  justify-content:center;
+  align-items: center;
+
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;  /* Add transition for smooth color changes */
+  &:hover {
+      background-color: #ffffff;  /* Set background color on hover */
+      color: #FF59E5;  /* Set text color on hover */
+      -webkit-text-stroke: 0.8px #000000;
+  }
+}
+
+.text-container-right:hover +.popup-box-right {
+  display: block;
+}
+
+.text-container-right p {
+  /* Optional styles for the paragraph element (text) */
+  font-size: 28px;  /* Example: Set font size to 14px */
+  letter-spacing: 0.5px;
+}
+
+.popup-box-right {
+  background-color: #ffffff;  /* Set background color for the rectangle */
+  height: 320px;  /* Set a specific height (adjust as needed) */
+  width: 250px;  /* Set a specific width (adjust as needed) */
+  border: 1px solid #000000;;
+  color: #000000;  /* Example: Set text color to white */
+  border-radius: 60px;  /* Set the corner radius for rounded corners */
+  display: none;  /* Hide the popup box initially */
+  z-index: -1;
+  box-shadow: 5px 5px 0px #000000;;  /* Add solid black shadow */
+}
+
+.popup-box-right p {  /* Optional styles for the text within the popup box */
+  font-size: 12.5px;  /* Example: Set font size */
+  margin-top: 18px;
+  margin-left: 20px;  /* Remove default margins */
+  margin-right: 20px;  /* Remove default margins */
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+
+}
+
+
+.text-container-heart {
+  --c: #8841E8;
+  width: 250px;
+  aspect-ratio: 1;
+  background:
+   radial-gradient(at 70% 31%,var(--c) 29%,#0000 30%),
+   radial-gradient(at 30% 31%,var(--c) 29%,#0000 30%),
+   conic-gradient(from -45deg at 50% 84%,var(--c) 90deg,#0000 0) 
+    bottom/100% 50% no-repeat;
+  color: #000000;  /* Example: Set text color to white */
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;  /* Remove underline */
+
+
+  transition: color 0.2s ease-in-out;  /* Add transition for smooth color changes */
+  &:hover {
+      color: #E4FF74;  /* Set text color on hover */
+      -webkit-text-stroke: 0.8px #000000;
+            /* Optional styles for the anchor tag within the heart */
+text-decoration: none;  /* Remove underline */
+cursor: pointer;  /* Change cursor to pointer on hover */
+}
+  }
+
+.text-container-heart p {
+  /* Optional styles for the paragraph element (text) */
+  font-size: 55px;  /* Example: Set font size to 14px */
+  letter-spacing: 0.5px;
+  margin-top: -0.1em;  /* Add space between h1 and h2 */
+  line-height: 0.8;
+}
+
+
+@media (max-width: 800px) {
+  /* Styles for smaller screens */
+  h1 {
+    font-size: 1.5em;  /* Adjust font size for smaller screens */
+  }
+  h2 {
+      font-size: 2em;  /* Adjust font size for smaller screens */
+    }
+  h3 {
+      font-size: 1.5em;  /* Adjust font size for smaller screens */
+    }
+    .star-image2,
+    .star-image {
+display: none;
+    }
+
+    p {
+      font-size: 0.6em;  /* Adjust font size for smaller screens */
+      text-align: center;
+    }
+    footer {
+      position: fixed;
+        height: 0.9em;  /* Adjust footer height for smaller screens */
+        padding-top: 15px;  /* Adjust padding for smaller screens (optional) */
+        padding-bottom: 15px;
+    }
+.grid-container{
+padding-top:25px;
+}
+    .text-container,
+    .text-container-right{
+      padding: 0.5em; /* Adjusts padding relative to font size */
+      width: 30vw; /* Takes up 70% of viewport width on smaller screens */
+      height: 1vw; /* Takes up 70% of viewport width on smaller screens */
+    }
+    .text-container p,
+    .text-container-right p{
+    font-size: 0.48em;
+    }
+
+    .popup-box,
+    .popup-box-right{
+      width: 37vw; /* Takes up 70% of viewport width on smaller screens */
+      height: 55vw; /* Takes up 70% of viewport width on smaller screens */
+      border-radius: 30px;
+      box-shadow: 2px 2px 0px #000000;;  /* Add solid black shadow */
+    }
+
+    .popup-box p,
+    .popup-box-right p {
+      font-size: 0.27em;
+    }
+
+    .text-container-heart {
+      width: 35vw; /* Takes up 70% of viewport width on smaller screens */
+    }
+
+    .text-container-heart p {
+      font-size: 1.2em;
+    }
+
+
+  }
+
+  @media (max-width: 1000px) {
+    /* Styles for smaller screens */
+    body {
+        background-size: 300%;  /* Zoom in slightly (adjust as needed) */
+        background-position: top;  /* Center the zoomed portion */
+      }
+    } 
