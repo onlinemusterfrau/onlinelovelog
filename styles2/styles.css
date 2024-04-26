@@ -159,7 +159,7 @@ height: 300px;  /* Set a specific height (adjust as needed) */
 width: 250px;  /* Set a specific width (adjust as needed) */
 border: 1px solid #000000;;
 color: #000000;  /* Example: Set text color to white */
-border-radius: 60px;  /* Set the corner radius for rounded corners */
+border-radius: 45px;  /* Set the corner radius for rounded corners */
 display: none;  /* Hide the popup box initially */
 z-index: -1;
 box-shadow: 5px 5px 0px #000000;;  /* Add solid black shadow */
@@ -167,7 +167,7 @@ box-shadow: 5px 5px 0px #000000;;  /* Add solid black shadow */
 
 .popup-box p {  /* Optional styles for the text within the popup box */
 font-size: 12.5px;  /* Example: Set font size */
-margin-top: 18px;
+margin-top: 15px;
 margin-left: 20px;  /* Remove default margins */
 margin-right: 20px;  /* Remove default margins */
 display: flex;
@@ -215,7 +215,7 @@ height: 320px;  /* Set a specific height (adjust as needed) */
 width: 250px;  /* Set a specific width (adjust as needed) */
 border: 1px solid #000000;;
 color: #000000;  /* Example: Set text color to white */
-border-radius: 60px;  /* Set the corner radius for rounded corners */
+border-radius: 45px;  /* Set the corner radius for rounded corners */
 display: none;  /* Hide the popup box initially */
 z-index: -1;
 box-shadow: 5px 5px 0px #000000;;  /* Add solid black shadow */
@@ -223,7 +223,7 @@ box-shadow: 5px 5px 0px #000000;;  /* Add solid black shadow */
 
 .popup-box-right p {  /* Optional styles for the text within the popup box */
 font-size: 12.5px;  /* Example: Set font size */
-margin-top: 18px;
+margin-top: 15px;
 margin-left: 20px;  /* Remove default margins */
 margin-right: 20px;  /* Remove default margins */
 display: flex;
