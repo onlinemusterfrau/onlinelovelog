@@ -295,7 +295,7 @@ display: none;
   }
   .text-container p,
   .text-container-right p{
-  font-size: 0.6em;
+  font-size: 0.45em;
   }
 
   .popup-box,
@@ -309,6 +309,7 @@ display: none;
   .popup-box p,
   .popup-box-right p {
     font-size: 1.9vw;
+    line-height: 1.3;
   }
 
   .text-container-heart {
