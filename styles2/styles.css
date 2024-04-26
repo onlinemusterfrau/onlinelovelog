@@ -287,16 +287,6 @@ cursor: pointer;  /* Change cursor to pointer on hover */
 display: none;
     }
 
-    p {
-      font-size: 0.6em;  /* Adjust font size for smaller screens */
-      text-align: center;
-    }
-    footer {
-      position: fixed;
-        height: 0.9em;  /* Adjust footer height for smaller screens */
-        padding-top: 15px;  /* Adjust padding for smaller screens (optional) */
-        padding-bottom: 15px;
-    }
 .grid-container{
 padding-top:25px;
 }
@@ -345,4 +335,14 @@ padding-top:25px;
         background-size: 300%;  /* Zoom in slightly (adjust as needed) */
         background-position: top;  /* Center the zoomed portion */
       }
+          p {
+      font-size: 0.6em;  /* Adjust font size for smaller screens */
+      text-align: center;
+    }
+    footer {
+      position: fixed;
+        height: 0.9em;  /* Adjust footer height for smaller screens */
+        padding-top: 15px;  /* Adjust padding for smaller screens (optional) */
+        padding-bottom: 15px;
+    }
     } 
