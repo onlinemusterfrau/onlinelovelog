@@ -4,7 +4,9 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     margin: 0;  /* Remove default browser margins */
-    font-family: HWT Artz;  /* Choose a base font family */
+    font-family: "hwt-artz", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 30px;
     width: 100%; /* Ensure body fills viewport */
 
